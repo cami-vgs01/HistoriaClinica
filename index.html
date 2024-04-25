@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HistoriaClinica</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <h1>Historia Clínica</h1>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="photo">
+                    <h3>Foto</h3>
+                    <input type="file" id="uploadPhotoInput" style="display: none;">
+                    <button id="btn_foto">Subir Foto</button>
+                    <div id="photo-preview"></div>
+                </div>
+            </div>            
+            <div class="col-md-6">
+                <div class="personal-info-form bg-light p-4 rounded">
+                    <div class="personal-info">
+                        <h3>Datos Personales</h3>
+                        <div class="personal-info-form">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" required>
+                            <label for ="dirección">Dirección:</label>
+                            <input type="text" id="dirección" required>
+                            <label for="teléfono">Teléfono:</label>
+                            <input type="text" id="teléfono" required>
+                            <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                            <input type="datetime-local" id="fecha-nacimiento" required>
+                            <p id="resultado-edad"></p>
+                            <label for="cedula">Cédula de Identidad:</label>
+                            <input type="text" id="cedula" required>
+                            <label for="pais">País:</label>
+                            <select id="pais" required>
+                                <option value="">Seleccionar País</option>
+                                <option value="EC">Ecuador</option>
+                                <option value="CO">Colombia</option>
+                                <option value="AR">Argentina</option>
+                                <option value="BR">Brasil</option>
+                                <option value="EU">Estados Unidos</option>
+                                <option value="UR">Uruguay</option>
+                            </select>
+                            <label for="ciudad">Ciudad:</label>
+                            <select id="ciudad" required>
+                            </select>
+                            <button id="consultar-btn">Consultar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="consultas">
+                <h3>Consultas</h3>
+                <table id="tabla-consultas">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-consultas">
+                    </tbody>
+                </table>
+            </div>
+            <div class="hijos">
+                <h3>Hijos</h3>
+                <table id="tabla-hijos">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Sexo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-hijos">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>2024 Historia Clínica</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

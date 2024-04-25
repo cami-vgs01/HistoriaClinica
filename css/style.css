@@ -1,0 +1,119 @@
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-6 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        float: left;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #000418;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.personal-info-form {
+    margin-bottom: 20px;
+}
+
+.personal-info-form label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.personal-info-form button {
+    background-color: #000418;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.photo button{
+    background-color: #000418;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.personal-info-form input[type="text"], .personal-info-form select, .personal-info-form input[type="datetime-local"] {
+    width: 100%;
+}
+
+.consultas table, .hijos table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Establece un espaciado uniforme dentro de las celdas de la tabla */
+.consultas th, .consultas td, .hijos th, .hijos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    width: auto;
+}
+
+/* Establece un estilo de borde más agradable para resaltar las celdas */
+.consultas th, .hijos th {
+    background-color: #000418;
+    color: #fff;
+}
+
+/* Añade un sombreado suave a las tablas para destacarlas */
+.consultas, .hijos {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden; /* Evita que los bordes redondeados sean cortados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.photo {
+    margin-bottom: 20px; /* Espacio entre la foto y el siguiente contenido */
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#photo-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
